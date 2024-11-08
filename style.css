@@ -1,0 +1,169 @@
+*
+body {
+    margin: 0; 
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+
+    background-image: url('IMAGENS/imagem-fundo.jpeg');
+    background-size: cover;
+    background-attachment: fixed; 
+      background-position: center;
+
+      color: white;
+
+      
+  }
+
+body h1{
+    font-family: 'Merriweather', sans-serif;
+    font-size: 90px;
+    margin-left: 20px;
+    margin-top: 12rem;
+}
+
+body p{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.imagem1{
+    size: cover;
+}
+
+.logo {
+    position: relative;
+    display: inline-flex;
+    padding-right: 1rem;
+    padding-left: 80px;
+  }
+  
+  .logo img {
+    max-width: 150px;
+    max-height: 100px;
+  }
+  
+  .logo::after {
+    content: "";
+    position: absolute;
+    bottom: -20px; 
+    left: 70%; /* Centraliza o triângulo abaixo da logo */
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent; 
+    border-right: 50px solid transparent; 
+    border-top: 35px solid white; /* Cor do triângulo */
+    opacity: 1; /* Torna o triângulo visível o tempo todo */
+  }
+  
+
+
+
+.historia {
+    position: relative;
+    margin-left: 700px;
+}
+
+.cultura {
+    position: relative;
+    margin-left: 200px;
+}
+
+
+.pontos-turisticos {
+    position: relative;
+    margin-left: 180px;
+}
+
+
+.menu{
+    color: black;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    height: 6rem;
+    margin-left: 0;
+
+}
+
+
+.botoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Playfair Display', sans-serif;
+    margin-top: 20rem;
+}
+
+.botao1 {
+    width: 16rem; 
+    height: 28rem;
+    background-image: url('IMAGENS/imagem-botao.jpeg'); 
+    background-size: cover; 
+    border: none; 
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 10%;
+    
+}
+
+button:hover {
+    transform: scale(1.1); 
+    transition: transform 0.5s ease;
+}
+
+.botao2 {
+    width: 16rem; 
+    height: 28rem;
+    background-image: url('IMAGENS/imagem-botao2.jpeg'); 
+    background-size: cover; 
+    border: none; 
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 10%;
+}
+
+.botao3 {
+    width: 16rem; 
+    height: 28rem;
+    background-image: url('IMAGENS/imagem-botao3.jpeg'); 
+    background-size: cover; 
+    border: none; 
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 10%;
+}
+
+.voce_sabia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mitologia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.faraos_notaveis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.voce_sabia p{
+    font-size: 40px;
+}
+
+.mitologia p{
+    font-size: 40px;
+}
+
+.faraos_notaveis p{
+    font-size: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

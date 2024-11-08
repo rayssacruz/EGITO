@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../../IMAGENS/vale.fundo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.logo {
+  position: relative;
+  display: inline-flex;
+  padding-right: 1rem;
+  padding-left: 80px;
+}
+
+.logo img {
+  max-width: 150px;
+  max-height: 100px;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  bottom: -20px; 
+  left: 480%; /* Centraliza o triângulo abaixo da logo */
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent; 
+  border-right: 50px solid transparent; 
+  border-top: 35px solid white; /* Cor do triângulo */
+  opacity: 1; /* Torna o triângulo visível o tempo todo */
+}
+
+
+
+
+.historia {
+  position: relative;
+  margin-left: 700px;
+}
+
+.cultura {
+  position: relative;
+  margin-left: 200px;
+}
+
+
+.pontos-turisticos {
+  position: relative;
+  margin-left: 180px;
+}
+
+.bl {
+  color: black;
+}
+
+.menu{
+  color: black;
+  background-color: white;
+  align-items: center;
+  display: flex;
+  height: 6rem;
+  margin-left: 0;
+
+}
+
+h1 {
+  font-family: 'Merriweather', sans-serif;
+  font-size: 90px;
+  color: white;
+  margin-bottom: 2rem;
+  margin-top: 150px;
+  margin-left: 20px;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: white;
+  max-width: 80rem;
+  line-height: 1.6;
+  margin-left: 20px;
+}
+
+h2,
+h3{
+  font-family: 'Merriweather', sans-serif;
+  color: white;
+  margin-bottom: 1rem;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+
+h2{
+  font-size: 40px;
+}
+
+h3{
+  font-size: 30px;
+}
+
+.ultimo{
+  margin-bottom: 70px;
+}
+
+.bl{
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  margin-left: -2px;
+  
+  margin-bottom: 60px;
+}
+
+a{
+  text-decoration: none;
+}

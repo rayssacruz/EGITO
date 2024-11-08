@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../IMAGENS/pontos-fundo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+    position: relative;
+}
+
+header{
+    background-color: white;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    height: 6rem;
+}
+
+.logo {
+    position: relative;
+    display: inline-flex;
+    padding-right: 1rem;
+    padding-left: 80px;
+  }
+  
+  .logo img {
+    max-width: 150px;
+    max-height: 100px;
+  }
+  
+  .logo::after {
+    content: "";
+    position: absolute;
+    bottom: -20px; 
+    left: 800%; /* Centraliza o triângulo abaixo da logo */
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent; 
+    border-right: 50px solid transparent; 
+    border-top: 35px solid white; /* Cor do triângulo */
+    opacity: 1; /* Torna o triângulo visível o tempo todo */
+  }
+
+.historia {
+    margin-left: 700px;
+}
+
+.cultura {
+    margin-left: 200px;
+    color: black;
+}
+
+.pontos-turisticos {
+    margin-left: 180px;
+}
+
+/* Content Styles */
+h1 {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 90px;
+    color: white;
+    margin: 150px 0 2rem 20px;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: white;
+    max-width: 80rem;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+.img {
+    width: 250px;
+    height: 250px;
+    border-radius: 20%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.img:hover{
+    width: 300px;
+    height: 300px;
+}
+
+
+.p1, .p2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.p1 {
+    margin-top: 150px;
+}
+
+.h {
+    width: 250px;
+    text-align: center;
+    font-family: 'Merriweather', sans-serif;
+    color: white;
+    margin-top: 15px;
+}
+
+.h2{
+    color:black;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+    
+}

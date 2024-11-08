@@ -1,0 +1,262 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../IMAGENS/fundo.farao.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* Menu Styles */
+.menu {
+  background-color: white;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 60px;
+}
+
+.logo {
+  position: relative;
+  display: inline-flex;
+  padding-right: 1rem;
+  padding-left: 80px;
+}
+
+.logo img {
+  max-width: 150px;
+  max-height: 100px;
+}
+
+
+.nav-items {
+  display: flex;
+  gap: 180px;
+}
+
+.menu-item h2 {
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  padding: 0 20px;
+  margin-top: 12rem;
+}
+
+.hero h1 {
+  font-family: 'Merriweather', sans-serif;
+  font-size: 90px;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.hero p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: white;
+  max-width: 80rem;
+  line-height: 1.6;
+}
+
+/* Faraós Section */
+.faraos {
+  margin-top: 300px;
+  padding: 0 20px;
+}
+
+.parte1, .parte2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+.farao-card {
+  text-align: center;
+  cursor: pointer;
+}
+
+.farao-card img {
+  width: 30rem;
+  border-radius: 10%;
+  transition: all 0.3s ease;
+}
+
+.overlay-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40rem;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+  z-index: 1000;
+  display: none;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.overlay-container.active {
+  display: block;
+}
+
+.overlay-container h3 {
+  font-family: 'Merriweather', sans-serif;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: gold;
+}
+
+.overlay-container p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.farao-card h2 {
+  color: white;
+  font-family: 'Merriweather', sans-serif;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+/* Backdrop */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
+}
+
+.backdrop.active {
+  display: block;
+}
+
+/* Media Queries */
+@media (max-width: 1400px) {
+  .nav-items {
+    gap: 100px;
+  }
+  
+  .farao-card img {
+    width: 25rem;
+  }
+  
+  .overlay-container {
+    width: 35rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero h1 {
+    font-size: 70px;
+  }
+  
+  .farao-card img {
+    width: 20rem;
+  }
+  
+  .overlay-container {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu {
+    padding: 0 20px;
+  }
+  
+  .nav-items {
+    gap: 50px;
+  }
+  
+  .hero h1 {
+    font-size: 50px;
+  }
+  
+  .parte1, .parte2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .farao-card img {
+    width: 80vw;
+    max-width: 30rem;
+  }
+  
+  .overlay-container {
+    width: 90%;
+    max-width: 30rem;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu {
+    height: auto;
+    padding: 10px;
+    flex-direction: column;
+  }
+  
+  .logo img {
+    margin: 0 auto;
+  }
+  
+  .nav-items {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 40px;
+  }
+  
+  .farao-card h2 {
+    font-size: 18px;
+  }
+  
+  .overlay-container h3 {
+    font-size: 28px;
+  }
+}
+
+.logo{
+  margin-left: -60px;
+}
+
+.h2{
+  display: flex;
+  align-items: center;
+  
+
+}
+a{
+  text-decoration: none;
+}
+.nav-items{
+  margin-left: 710px;
+}
+.h{
+  margin-right: 15px;
+}
+

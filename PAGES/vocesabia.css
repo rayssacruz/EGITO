@@ -1,0 +1,123 @@
+body {
+    margin: 0; 
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+
+    background-image: url('../IMAGENS/fundo.vocesabia.png');
+    background-size: cover;
+    background-attachment: fixed; 
+      background-position: center;
+
+
+      color: white;
+
+      
+}
+
+
+body h1{
+    font-family: 'Merriweather', sans-serif;
+    font-size: 90px;
+    margin-left: 20px;
+    margin-top: 12rem;
+    color: white;
+}
+body h3{
+    font-family: 'Merriweather', sans-serif;
+    margin-top: 8rem;
+    font-size: 40px;
+
+}
+.gatos{
+   
+    display: flex;
+  
+    justify-content: space-around;
+}
+.texto-gatos{
+    flex-direction: column;
+}
+.imagem-gato img{
+    height: 18rem;
+    width: 28rem;
+    margin-top: 7rem;
+    border-radius: 10px;
+}
+.mumificacao{
+    display: flex;
+    justify-content: space-around;
+}
+.texto-mumificacao{
+    flex-direction: column;
+}
+.imagem-mumificacao img{
+    height: 18rem;
+    width: 28rem;
+    margin-top: 7rem;
+    border-radius: 10px;
+}
+.papiro{
+    display: flex;
+    justify-content: space-around;
+}
+.texto-papiro{
+    flex-direction: column;
+}
+.imagem-papiro img{
+    height: 18rem;
+    width: 28rem;
+    margin-top: 7rem;
+    border-radius: 10px;
+
+}
+
+
+body p{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.logo img{
+    max-width: 150px;
+    max-height: 100px;
+    margin-right: 42rem;
+    margin-left: 80px;
+}
+
+.logo{
+    margin-left: 0;
+}
+
+.historia{
+    margin-right: 190px;
+}
+
+.cultura{
+    margin-right: 180px;
+}
+
+
+.menu{
+    color: black;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    height: 6rem;
+    margin-left: 0;
+   
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.oi{
+    margin-bottom: 20px;
+}
+
+.h{
+    margin-left: 50px;
+    margin-right: 10px;
+}

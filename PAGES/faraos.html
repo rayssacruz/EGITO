@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="faraos.css">
+    <title>Faraós do Egito</title>
+</head>
+<body>
+    <div class="backdrop"></div>
+    <div class="overlay-container">
+        <h3></h3>
+        <p></p>
+    </div>
+
+    <header>
+        <nav class="menu">
+            <div class="logo">
+                <a href="../index.html"><img src="../IMAGENS/imagem-logo.png" alt="" ></a>
+            </div>
+            <div class="nav-items">
+                <div class="menu-item historia">
+                    <a class="a" href="../PAGES/historia.html"><h2 class="h">História</h2></a>
+                </div>
+                <div class="menu-item cultura">
+                    <a href="../PAGES/cultura.html"><h2 class="h2">Cultura</h2></a>
+                </div>
+                <div class="menu-item pontos-turisticos">
+                    <a href="../PAGES/pontos.html"><h2 class="h2">Pontos turísticos</h2></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Faraós Notáveis</h1>
+            <p>Os faraós eram os governantes do Antigo Egito, considerados divindades vivas e 
+                representantes dos deuses na Terra. Eles desempenhavam um papel central na política, 
+                religião e cultura egípcia, sendo vistos como intermediários entre os deuses e o povo. Alguns 
+                faraós ficaram notáveis por suas realizações militares, grandes projetos de construção e 
+                reformas religiosas. O poder e a influência dos faraós eram simbolizados por monumentos 
+                imponentes, como as pirâmides e templos, e suas histórias continuam a fascinar estudiosos e 
+                curiosos até hoje.</p>
+        </section>
+
+        <section class="faraos">
+            <div class="parte1">
+                <div class="farao-card" data-nome="Tutancâmon" data-descricao="Conhecido como o 'Faraó Menino', Tutancâmon subiu ao trono aos 9 anos e reinou por cerca de 10 anos. Sua tumba, descoberta em 1922, é uma das mais bem preservadas do Egito Antigo.">
+                    <img class="farao" src="../IMAGENS/farao1.png" alt="Tutancâmon">
+                    <h2>Tutancâmon</h2>
+                </div>
+                <div class="farao-card" data-nome="Ramsés II" data-descricao="Um dos faraós mais poderosos do Egito Antigo, Ramsés II reinou por 66 anos. Foi responsável por grandes construções e conquistas militares, sendo conhecido como Ramsés, o Grande.">
+                    <img class="farao" src="../IMAGENS/farao2.png" alt="Ramsés II">
+                    <h2>Ramsés II</h2>
+                </div>
+            </div>
+            <div class="parte2">
+                <div class="farao-card" data-nome="Cleópatra VII" data-descricao="Última faraó do Egito Antigo, Cleópatra VII foi uma governante astuta e poderosa. Conhecida por sua inteligência e influência política, aliou-se a Júlio César e Marco Antônio.">
+                    <img class="farao" src="../IMAGENS/farao3.png" alt="Cleópatra VII">
+                    <h2>Cleópatra VII</h2>
+                </div>
+                <div class="farao-card" data-nome="Hatshepsut" data-descricao="Uma das poucas mulheres a governar como faraó, Hatshepsut reinou por 22 anos. Seu reinado foi marcado por paz e prosperidade, com grandes projetos arquitetônicos.">
+                    <img class="farao" src="../IMAGENS/farao4.png" alt="Hatshepsut">
+                    <h2>Hatshepsut</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.querySelectorAll('.farao-card').forEach(card => {
+            card.addEventListener('mouseover', () => {
+                const overlay = document.querySelector('.overlay-container');
+                const backdrop = document.querySelector('.backdrop');
+                const nome = card.getAttribute('data-nome');
+                const descricao = card.getAttribute('data-descricao');
+                
+                overlay.querySelector('h3').textContent = nome;
+                overlay.querySelector('p').textContent = descricao;
+                
+                overlay.classList.add('active');
+                backdrop.classList.add('active');
+            });
+
+            card.addEventListener('mouseout', () => {
+                const overlay = document.querySelector('.overlay-container');
+                const backdrop = document.querySelector('.backdrop');
+                
+                overlay.classList.remove('active');
+                backdrop.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

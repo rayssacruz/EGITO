@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url('../../IMAGENS/vale.fundo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+    position: relative;
+  }
+
+  header{
+    background-color: white;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    height: 6rem;
+  }
+  
+  .logo {
+    position: relative;
+    display: inline-flex;
+    padding-right: 1rem;
+    padding-left: 80px;
+  }
+  
+  .logo img {
+    max-width: 150px;
+    max-height: 100px;
+  }
+
+  
+  .historia {
+    margin-left: 700px;
+  }
+  
+  .cultura {
+    margin-left: 200px;
+    color: black;
+  }
+  
+  .pontos-turisticos {
+    margin-left: 180px;
+  }
+
+  .h {
+    color: black;
+  }
+  
+  h1 {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 90px;
+    color: white;
+    margin-bottom: 2rem;
+    margin-top: 150px;
+    margin-left: 20px;
+  }
+  
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: white;
+    max-width: 80rem;
+    line-height: 1.6;
+    margin-left: 20px;
+  }
+
+  h2{
+    font-family: 'Merriweather', sans-serif;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 1rem;
+    margin-top: 60px;
+    margin-left: 20px;
+  }
+  
+  .p{
+    margin-bottom: 50px;
+  }
+  
+  .h{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin-bottom: 60px;
+    margin-left: -4px;
+  }
+  a{
+    text-decoration: none;
+  }

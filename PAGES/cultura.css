@@ -1,0 +1,117 @@
+*
+body {
+    margin: 0; 
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+
+    background-image: url('/IMAGENS/fundo.cultura.png');
+    background-size: cover;
+    background-attachment: fixed; 
+      background-position: center;
+
+      
+  }
+
+.imagem1{
+    size: cover;
+}
+
+.logo {
+    position: relative;
+    display: inline-flex;
+    padding-right: 1rem;
+    padding-left: 80px;
+  }
+  
+  .logo img {
+    max-width: 150px;
+    max-height: 100px;
+  }
+  
+  .logo::after {
+    content: "";
+    position: absolute;
+    bottom: -20px; 
+    left: 635%; /* Centraliza o triângulo abaixo da logo */
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent; 
+    border-right: 50px solid transparent; 
+    border-top: 35px solid white; /* Cor do triângulo */
+    opacity: 1; /* Torna o triângulo visível o tempo todo */
+  }
+  
+
+
+
+.historia {
+    position: relative;
+    margin-left: 700px;
+}
+
+.cultura {
+    position: relative;
+    margin-left: 200px;
+}
+
+
+.pontos-turisticos {
+    position: relative;
+    margin-left: 180px;
+}
+
+
+.menu{
+    color: black;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    height: 6rem;
+    margin-left: 0;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+body h1 {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 90px;
+    color: white;
+    margin-bottom: 2rem;
+    margin-top: 150px;
+    margin-left: 20px;
+  }
+  
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: white;
+    max-width: 80rem;
+    line-height: 1.6;
+    margin-left: 20px;
+  }
+  
+.h2{
+    font-family: 'Merriweather', sans-serif;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 1rem;
+    margin-top: 60px;
+    margin-left: 20px;
+  }
+  
+  .soulindars{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .p{
+    margin-bottom: 50px;
+  }

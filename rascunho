@@ -1,0 +1,29 @@
+
+
+
+
+
+
+.um:hover .tooltip{
+  top: 120%;
+  left: 122.5%;
+  transform: translate(-30%, -60%)
+}
+
+.dois:hover .tooltip{
+  top: 120%;       
+  left: -18.5%;       
+  transform: translate(-70%, -60%); 
+}
+
+.tres:hover .tooltip {
+  top: -112.5%;         
+  left: 122.5%;        
+  transform: translate(-30%, 60%); 
+}
+
+.quatro:hover .tooltip{
+  top: -112.5%;            
+  left: -18.5%;     
+  transform: translate(-70%, 60%);
+}
